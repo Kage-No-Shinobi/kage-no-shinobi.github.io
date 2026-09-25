@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101211">
+  <title>Contact John — Python & Web Developer</title>
+  <meta name="description" content="Contact John about junior Python, web development, and software engineering opportunities.">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='9' fill='%23c7f36b'/%3E%3Ctext x='12' y='29' font-family='Arial' font-weight='bold' font-size='28' fill='%23101211'%3EJ%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="wrap">
+    <a class="brand" href="index.html" aria-label="John home">john<span>.</span><small>DEVELOPER PORTFOLIO</small></a>
+    <nav aria-label="Main navigation">
+      <a href="index.html#work">Work</a>
+      <a href="index.html#skills">Skills</a>
+      <a href="index.html#about">About</a>
+      <a class="nav-contact" href="contact.html" aria-current="page">Contact <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+  <main class="contact-main wrap" id="main">
+    <p class="eyebrow">04 / GET IN TOUCH</p>
+    <div class="contact-grid">
+      <div>
+        <h1>Let’s build<br><em>something useful.</em></h1>
+        <p class="lead">Have a junior role, internship, or project in mind? Send me an email with a few details. I’m interested in Python, web development, and software engineering opportunities.</p>
+        <a class="contact-back" href="index.html">← Back to portfolio</a>
+      </div>
+      <aside class="contact-card" aria-label="Contact details">
+        <p class="eyebrow">THE BEST WAY TO REACH ME</p>
+        <h2>Email John.</h2>
+        <p>Include the role or project, a short introduction, and how I can reach you.</p>
+        <a class="contact-address" href="mailto:jokutachi@gmail.com?subject=Portfolio%20enquiry">jokutachi@gmail.com</a>
+        <div class="contact-actions">
+          <a class="button" href="mailto:jokutachi@gmail.com?subject=Portfolio%20enquiry">Write an email <span aria-hidden="true">↗</span></a>
+          <button class="copy-button" type="button" id="copy-email">Copy address</button>
+        </div>
+        <p class="copy-status" id="copy-status" role="status" aria-live="polite"></p>
+        <div class="contact-other">
+          <span>FIND ME ONLINE</span>
+          <div class="social-grid">
+            <a class="social-link" href="https://github.com/Kage-No-Shinobi" aria-label="GitHub profile">
+              <span class="social-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m8 7-5 5 5 5m8-10 5 5-5 5M14 4l-4 16"/></svg></span>
+              <span><strong>GitHub</strong><small class="link-ready">Visit profile ↗</small></span>
+            </a>
+            <!-- To activate a social icon, add href="https://your-profile-url" to its <a> tag. -->
+            <a class="social-link">
+              <span class="social-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="2.5" width="19" height="19" rx="3"/><path d="M7.5 10v7m0-10v.01M11.5 17v-7m0 3a3 3 0 0 1 6 0v4"/></svg></span>
+              <span><strong>LinkedIn</strong><small class="link-pending">Coming soon</small><small class="link-ready">Visit profile ↗</small></span>
+            </a>
+            <a class="social-link">
+              <span class="social-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 4 20 20M20 4 4 20"/></svg></span>
+              <span><strong>X</strong><small class="link-pending">Coming soon</small><small class="link-ready">Visit profile ↗</small></span>
+            </a>
+            <a class="social-link">
+              <span class="social-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="2.5" y="2.5" width="19" height="19" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor" stroke="none"/></svg></span>
+              <span><strong>Instagram</strong><small class="link-pending">Coming soon</small><small class="link-ready">Visit profile ↗</small></span>
+            </a>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </main>
+  <footer class="wrap"><a class="brand" href="index.html">john<span>.</span></a><span>Python. Web. A security-minded approach.</span><a href="index.html">Back to portfolio ↑</a></footer>
+  <script>
+    document.getElementById('copy-email').addEventListener('click', async () => {
+      const status = document.getElementById('copy-status');
+      try {
+        await navigator.clipboard.writeText('jokutachi@gmail.com');
+        status.textContent = 'Email address copied.';
+      } catch {
+        status.textContent = 'Select and copy the email address above.';
+      }
+    });
+  </script>
+</body>
+</html>
