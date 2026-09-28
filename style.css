@@ -44,3 +44,7 @@ nav a[aria-current="page"]{color:var(--lime);border-color:var(--lime)}
 .hero-actions{display:flex;flex-wrap:wrap;gap:12px}
 .button-outline{background:transparent;color:var(--text);border:1px solid #677261;gap:20px}
 .button-outline:hover{background:#232a20;color:var(--lime);border-color:var(--lime)}
+
+.project-grid-secondary{margin-top:20px}
+.compact-project .project-copy{min-height:100%}
+.compact-project h3{margin-top:24px}
